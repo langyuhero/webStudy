@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex名片2</title>
+    <style type="text/css">
+ * {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+ }
+        .main {
+            width: 300px;
+            height: 188px;
+            margin:30px auto;
+            border-radius: 5px;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: column;
+        }
+        .top {
+            display: flex;
+        }
+        .top .intro {
+            flex:1;
+        }
+        img {
+            width: 100px;
+            height: 90px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            margin:10px 20px;
+        }
+        .intro {
+            display: flex;
+            flex: 1;
+            flex-direction:column;
+            justify-content:center;
+        }
+        .main div {
+            flex: 1;
+        }
+        .list {
+            height: 64px;
+            display: flex;
+            align-items:flex-end;
+        }
+        .list li {
+            flex: 1;
+            color: #ffffff;
+            text-align: center;
+            display: block;
+            height: 64px;
+        }
+        .list li span {
+            width: 20px;
+            height: 20px;
+            font-size: 24px;
+            display: block;
+            margin: 4px auto;
+        }
+        .list li:nth-child(1) {
+            background-color: #0087AF;
+        }
+         .list li:nth-child(2) {
+             background-color: #DD6010;
+         }
+         .list li:nth-child(3) {
+             background-color: #008B88;
+         }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="top">
+        <div><img src="img/bg1.jpg" alt=""></div>
+        <div class="intro">
+            <h1>langyu</h1>
+            <p>这是langyu的个人简介</p>
+        </div>
+    </div>
+        <ul class="list">
+            <li><span>♡</span>12123</li>
+            <li><span>○</span>12123</li>
+            <li><span>★</span>1212</li>
+        </ul>
+</div>
+</body>
+</html>

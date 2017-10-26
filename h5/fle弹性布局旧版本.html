@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flexDemo</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .main {
+            display: -webkit-box;
+            height:400px;
+            border: 1px solid #f01414;
+            -webkit-box-orient: vertical;/*设置内部元素流动方向为垂直block-axis*/
+           /* --webkit-box-orient:horizontal;*//*设置内部元素流动方向为水平inline-axis*/
+            /*-webkit-box-orient:block-axis;*/
+
+
+            /*-webkit-box-direction: reverse;*//*设置容器的流动方向reverse：反序  normal 正序*/
+
+            /*-webkit-box-pack: center;*//*分散对齐*/
+            /*-webkit-box-pack: end;*/
+            /*水平对齐方式
+            start end justify center
+            start   :  伸缩项目以起始点靠齐
+              end   :  伸缩项目以结束点靠齐
+            center :  伸缩项目以中心点靠齐
+            justify  :  伸缩项目平局分布*/
+
+            /*-webkit-box-align: end;*//*垂直对齐方式*/
+
+
+        }
+        .main li {
+            height: 40px;
+            background-color: #1a5acd;
+            /*-webkit-box-flex: 1;!*设置剩余宽度平均分*!*/
+        }
+        .main li:nth-child(2n){
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+<ul class="main">
+    <li>1111111111111</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+</body>
+</html>

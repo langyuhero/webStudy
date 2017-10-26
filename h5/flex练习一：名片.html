@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .main {
+            width: 421px;
+            display: flex;
+            flex-direction: column;
+        }
+        img {
+            width: 130px;
+            height: 125px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            margin-left: 20px;
+            padding-top: 10px;
+        }
+        .top {
+            display: flex;
+            flex-direction:row;
+        }
+        .intro {
+            margin: 20px 10px 30px 30px;
+        }
+        .buttom {
+        }
+        .buttom li {
+            display: block;
+            width: 140px;
+            height: 96px;
+            float: left;
+        }
+        .buttom li:nth-child(1) {
+            background: url("img/_r4_c2.png") left;
+        }
+        .buttom li:nth-child(2) {
+            background: url("img/_r4_c2.png") center;
+        }.buttom li:nth-child(3) {
+           background: url("img/_r4_c2.png") right;
+         }
+        
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="top">
+        <div><img src="img/bg1.jpg" alt=""></div>
+        <div class="intro"><h1>langyu</h1>
+            <p>
+                这是langyu的个人简介
+            </p>
+        </div>
+    </div>
+    <div class="buttom">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
