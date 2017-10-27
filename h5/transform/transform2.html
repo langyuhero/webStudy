@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transform2</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #1a5acd;
+            margin: 100px auto;/*外边距上30px 左右自动对齐*/
+
+        }
+        .box:hover {
+            /*!*transform: rotate(45deg);*!
+            transform: rotateX(45deg);
+            !*
+            transform: rotate(<待旋转的角度>)
+            默认是以z轴旋转
+            rotateX,Y,Z
+            *!*/
+            /*transform: scale(.5,1.5);*/
+            /*transform: skew(36deg);*/
+            transition: 3000ms;//运动类型
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

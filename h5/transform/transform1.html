@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transform1</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            perspective: 200px;
+            /*景深  代表离物体的距离
+            越小  代表离物体越近
+            越大  越远
+            */
+        }
+        /*让盒子在浏览器中居中的方法1
+        .box {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -100px;
+            background-color: red;
+        }*/
+        /*让盒子在浏览器中居中的方法2*/
+        /*.box {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin:auto;
+            background-color: red;
+        }*/
+        /*第三种方法*/
+    .box {
+        width: 200px;
+        height: 200px;
+        margin:30px auto;
+        /*
+        transform:1.translate(x轴移动的像素距离,y轴移动像素的距离)
+        如果只有一个,默认y方向为0
+        */
+        background-color: #ff0000;
+    }
+        .box:hover {
+            transform: rotateX(45deg);
+            /*transition:all 3000ms 1s ease-in-out;*//*谁动  过程时间  延时时间   运动状态*/
+            /*linear 线性过渡 (匀速)
+            ease 平滑过渡 缓冲
+            ease-in 加速
+            ease-out  减速
+            ease-in-out   先加速再减速
+            */
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+
+</div>
+</body>
+</html>
